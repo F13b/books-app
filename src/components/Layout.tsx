@@ -26,12 +26,31 @@ const Layout = () => {
         <span>Made by Pavel Kononenkov 👨‍💻</span>
         <p className="mt-1">
           Contact me in:{" "}
-          <a href="https://github.com/F13b" target="_blank" rel="noreferrer">
+          <a
+            className="text-blue-500 hover:text-blue-700"
+            href="https://github.com/F13b"
+            target="_blank"
+            rel="noreferrer"
+          >
             Github
           </a>{" "}
-          or{" "}
-          <a href="https://t.me/we_we_13" target="_blank" rel="noreferrer">
+          ,{" "}
+          <a
+            className="text-blue-500 hover:text-blue-700"
+            href="https://t.me/we_we_13"
+            target="_blank"
+            rel="noreferrer"
+          >
             Telegram
+          </a>{" "}
+          or{" "}
+          <a
+            className="text-blue-500 hover:text-blue-700"
+            href="mailto:p.a.kononenkov@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Gmail
           </a>
         </p>
       </footer>
