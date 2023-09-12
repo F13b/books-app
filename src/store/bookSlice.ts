@@ -22,7 +22,7 @@ export const fetchBooks = createAsyncThunk<
   async function ({ search, sort, page }, { rejectWithValue }) {
     try {
       const response = await fetch(
-        `https://www.googleapis.com/books/v1/volumes?q=${search}&orderBy=${sort}&startIndex=${page}&maxResults=30&key=AIzaSyAFG1qTFrj_I0sUslz2JCjTg_A6jBBUcFE`
+        `https://www.googleapis.com/books/v1/volumes?q=${search}&orderBy=${sort}&startIndex=${page}&maxResults=30&key=${process.env.REACT_APP_BOOK_API_KEY}`
       );
 
       if (!response.ok) rejectWithValue("Something went wrong");

@@ -22,7 +22,7 @@ const Layout = () => {
       <main className="bg-gray-100">
         <Outlet />
       </main>
-      <footer className="w-90 mx-auto mt-10">
+      <footer className="w-90 mx-auto my-10">
         <span>Made by Pavel Kononenkov 👨‍💻</span>
         <p className="mt-1">
           Contact me in:{" "}
